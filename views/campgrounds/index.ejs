@@ -1,0 +1,40 @@
+
+<% include ../partials/header %>
+
+
+<div class="container">
+    
+    <header class="jumbotron">
+      
+      <div class="container">
+       
+           <h1>Welcome to YelpCamp</h1>
+           <p>View our handpicked camps from all over the world </p>
+        
+            <p >
+               <a class="btn btn-primary btn-large" href="/campgrounds/new">Add new campground</a> 
+            </p>
+            
+        </div>
+        
+    </header>
+    
+    <% for(let i=0;i<4;i++){  %>
+    
+        <div class="card" style="width: 18rem;">
+            
+                <img class="card-img-top" src="https://pbs.twimg.com/profile_images/558329813782376448/H2cb-84q_400x400.jpeg" alt="Card image cap">
+                
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+        
+        </div>
+    
+    <% } %>
+
+</div>
+
+<% include ../partials/footer %>
